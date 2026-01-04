@@ -19,6 +19,10 @@ HTTP Response
 
 ## 環境構築  
 
+### .env作成  
+ルートディレクトリで実行  
+cp .env.sample .env  
+
 ### Nodeコンテナ  
 $cd node  
 $docker exec -it node sh  
