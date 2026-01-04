@@ -47,6 +47,15 @@ maintenance database: todo_db or postgres
 username: postgres  
 password: postgres  
 
-### API接続  
+## API接続  
 http://localhost:3000/api/todos  
 todoの一覧取得→レスポンスが返ることを確認  
+
+## API構成  
+| 内容 | メソッド | URI |
+|------|--------|-----|
+| 全 Todo データを取得 | GET | /api/todos |
+| Todo の ID に紐づく単一の Todo データを取得 | GET | /api/todos/:id |
+| Todo 新規作成 | POST | /api/todos |
+| Todo 更新 | PUT | /api/todos/:id |
+| Todo 削除 | DELETE | /api/todos/:id |
