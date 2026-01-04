@@ -46,3 +46,7 @@ port: 5432
 maintenance database: todo_db or postgres  
 username: postgres  
 password: postgres  
+
+### API接続  
+http://localhost:3000/api/todos  
+todoの一覧取得→レスポンスが返ることを確認  
