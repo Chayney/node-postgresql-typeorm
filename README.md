@@ -19,6 +19,10 @@ HTTP Response
 
 ## 環境構築  
 
+### .env作成  
+ルートディレクトリで実行  
+cp .env.sample .env  
+
 ### Nodeコンテナ  
 $cd node  
 $docker exec -it node sh  
@@ -30,4 +34,19 @@ npm run migration:generate
 npm run migration:run  
 
 ### シーディング実行  
-npm run seed:run
+npm run seed:run  
+
+## pgAdmin設定  
+pgAdminについて  
+https://itsakura.com/pgadmin4-db-create  
+
+### サーバー接続設定  
+host: db  
+port: 5432  
+maintenance database: todo_db or postgres  
+username: postgres  
+password: postgres  
+
+### API接続  
+http://localhost:3000/api/todos  
+todoの一覧取得→レスポンスが返ることを確認  
