@@ -30,4 +30,15 @@ npm run migration:generate
 npm run migration:run  
 
 ### シーディング実行  
-npm run seed:run
+npm run seed:run  
+
+## pgAdmin設定  
+pgAdminについて  
+https://itsakura.com/pgadmin4-db-create  
+
+### サーバー接続設定  
+host: db  
+port: 5432  
+maintenance database: todo_db or postgres  
+username: postgres  
+password: postgres  
